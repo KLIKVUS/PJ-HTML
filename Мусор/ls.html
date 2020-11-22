@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>SSS</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            a {
+                text-align: center;
+                text-decoration: none; /* Убираем линию у текста */
+                color: inherit; /* Цвет как у родителя */
+            }
+            .menu {
+                width: 30%;
+                margin: 0 auto;
+                list-style-type: none;
+                font-size: 0;
+            }
+            .menu li { /* Для тегов li внутри тегов с классом menu */
+                height: 50px;
+                width: calc(100% / 3 - 2px);
+                border: 1px solid;
+                font: 20px / 50px sans-serif;
+                text-align: center;
+                display: inline-block;
+                background: rgba(0, 139, 139, 0.4);
+            }
+            .menu a {
+                color: rgb(60, 60, 60);
+                display: block; /* Делает кнопочку */
+            }
+            menu a:hover {
+                background:black;
+            }
+            .box {
+                background: linear-gradient(rgba(129, 48, 129, 1),rgba(153, 60, 60, 1));
+                width: 300px;     /*  Сколько занимает места в ширину / VH - для телефона, VW  */
+
+                /*
+                min-height: 130px;    Минимальная высота
+                max-height: 430px;    Максимальная высота, задаем только в % если есть папа у которого задана высота 
+                */
+
+                overflow: auto; /*  По дефолу viseble. Задаем значение для текста который не влез   */
+                border: solid 3px; /* Обеденяет все правила для рамки */
+                
+                /* 
+                border-color: darkslategrey; / Цвет рамки
+                border-width: 5px;
+                border-style: solid; / Слиль рамки. Solid - линия, Double - двойная, Dotte - точки
+                */
+
+                color:rgba(182, 167, 36, 0.7);
+                text-align: justify;
+                font-size: 20px;
+                line-height: 1;
+                padding: 20px 25px; /* Растояние до края рамки */
+                margin: 50px auto; /* Позиция текста */
+            }
+        </style>
+    </head>
+    <body>
+        <a href = "../index.html"><h2>Назад</h2></a>
+        <ul class="menu">
+            <li><a href="">link 1</a></li>
+            <li><a href="">link 2</a></li>
+            <li><a href="">link 3</a></li>
+        </ul>
+        <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus esse a perspiciatis maxime, voluptatum adipisci sit fuga temporibus fugiat modi, soluta recusandae impedit hic debitis odit dolorem minus, corrupti ullam vel veniam suscipit molestias. Repellendus impedit quod consectetur esse assumenda a placeat, qui magni dolorem accusamus totam dignissimos odio fugiat rem, expedita exercitationem voluptates ipsum sequi quasi quo quos! Ducimus dignissimos delectus distinctio vitae quia ipsum, animi nulla molestiae similique vero, harum incidunt ad? Provident fuga rem quidem asperiores, ab distinctio tempora impedit ea deserunt.</div>
+        <div class="box">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus esse a perspiciatis maxime, voluptatum adipisci sit fuga temporibus fugiat modi, soluta recusandae impedit hic debitis odit dolorem minus, corrupti ullam vel veniam suscipit molestias. Repellendus impedit quod consectetur esse assumenda a placeat, qui magni dolorem accusamus totam dignissimos odio fugiat rem, expedita exercitationem voluptates ipsum sequi quasi quo quos! Ducimus dignissimos delectus distinctio vitae quia ipsum, animi nulla molestiae similique vero, harum incidunt ad? Provident fuga rem quidem asperiores, ab distinctio tempora impedit ea deserunt.</div>
+    </body>
+</html>

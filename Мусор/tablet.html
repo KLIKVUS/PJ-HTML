@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Таблицы</title>
+        <style>
+            .tbl {
+                font-size: 25px;
+                border: solid 3px;
+                margin: auto;
+            }
+
+            .tbl th {
+                border: solid 2px;
+            }
+
+            .tbl td {
+                border: solid 3px;
+            }
+
+            /* table, td{
+                font-size: 25px;
+                border: solid 4px;
+            } */
+
+            .tab {
+                font-size: 25px;
+                border: solid 4px;
+                margin: 10px auto;
+            }
+
+            .tab td {
+                border: solid;
+            }
+
+            .box {
+                width: auto;
+                height: 50px;
+                background-color: thistle;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- table.tbl>tr>th{$}*4^tr*4{$}>td{4}*4 -->
+        
+        <table class="tbl">
+            <caption>Лаба</caption> <!-- Название таблички -->
+            <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td rowspan="2" colspan="2">23-24</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>34</td>
+            </tr>
+            <tr>
+                <td>41</td>
+                <td>42</td>
+                <td>43</td>
+                <td>44</td>
+            </tr>
+        </table>
+
+        <table class="tab">
+            <thead>
+                <tr>
+                    <!-- th - tablet head ( ячейка с заголовками ) -->
+                    <th>Столбец 1</th>
+                    <th>Столбец 2</th>
+                    <th>Столбец 3</th>
+                    <th>Столбец 4</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- tr - table row ( строка ) -->
+                <tr>
+                    <!-- td - table date ( ячейка ) -->
+                    <td rowspan="2">Ячейка1</td>    <!-- rowspan - удлиняет ячейку по горизонтали -->
+                    <td>Ячейка2</td>
+                    <td>Ячейка3</td>
+                    <td>Ячейка Новая</td>
+                </tr>
+                <!--{ tr*2>td*3{Ячейка $@4} - @ говорит с какого момента начинаем ощет }-->
+                <tr>
+                    <td>Ячейка 4</td>
+                    <td>Ячейка 5</td>
+                    <td>Ячейка 6</td>
+                </tr>
+                <tr>
+                    <td><div class="box"></div></td>
+                    <td>Ячейка 8</td>
+                    <td colspan="2">Ячейка 9</td>   <!-- colspan - удлиняет ячейку на несколько ячеек -->
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

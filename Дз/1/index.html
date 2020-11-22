@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            .hat {
+                width: 50%;
+                margin: auto;
+            }
+            .hat p {
+                font: 20px / 40px serif;
+                text-align: center;
+                background: rgba(0, 0, 0, 0.3);
+            }
+
+            .panel {
+                width: 50%;
+                margin: 3px auto;
+                text-align: center;
+                background: gray;
+            }
+            .panel a {
+                display: block;
+                font: 20px / 40px serif;
+                text-decoration: none; /* Убираем линию у текста */
+                color: inherit;
+            }
+            
+            .content {
+                margin-left: 25%;
+            }
+            .content li {
+                height: 500px;
+                width: 462.5px;
+                display: inline-block;
+                font: 20px / 40px serif;
+                text-align: center;
+                background: rgba(112, 81, 52, 0.5);
+            }
+
+            .end {
+                width: 50%;
+                margin: 3px auto;
+            }
+            .end p {
+                font: 20px / 40px serif;
+                text-align: center;
+                background: rgba(0, 0, 0, 0.4);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hat"><p>Это шапка сайта</p></div>
+
+        <div class="panel"><a href="">Это навигационная панель</a></div>
+
+        <ul class="content">
+            <li>Тут будет находиться основной контент сайта</li>
+            <li>Боковая панель</li>
+        </ul>
+
+        <div class="end"><p>Это подвал сайта</p></div>
+    </body>
+</html>

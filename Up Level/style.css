@@ -1,0 +1,84 @@
+.card {
+    width: 100px;
+    /* height: 150px; */
+    background: #87E0B5;
+    color: #B3FFDA;
+    border: solid 2px;
+    border-radius: 8px;
+    font: 100px / 1.5 sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin: 10px auto;
+    height: 250px;
+    background-color: #BF7C73;
+    display: flex;
+    border: solid 4px #4A9470;
+    border-radius: 4px;
+    flex-direction: row;
+    /* Направление основной оси
+    row - значение по умолчанию ( строка )
+    row-rewers - обратное направление ( строка наоборот )
+    column - сверху вниз
+    column-reverse - снизу вверх */
+    justify-content: space-around;
+    /* Расположение вдоль основной оси
+    flex-start ( с начала основной оси )
+    flex-end ( с конца основной оси )
+    space-between ( первый элемент находиться в начале оси, последний в конце оси, а между элементами появляется равномерный отступ )
+    space-around ( равномерный отступ не между тегами, а вокруг каждого тега )
+    center
+    */
+    align-items: center;
+    /* Выравнивание тегов вдоль поперечной оси ( перпендикулярной )
+    stretch - растягивает по размеру родителя
+    flex-start - с верху основной оси 
+    flex-end - с низу основной оси 
+    baseline - выравнивание элемента по нижнему краю контента
+    center */
+}
+
+.content {
+    background: #97635c;
+    color: #87E0B5;
+    font: 30px sans-serif;
+    border: solid 4px #4A9470;
+    border-radius: 4px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+header {
+    height: 100px;
+    background:#97635ce0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    font: 20px sans-serif;
+    color: #87E0B5;
+    border: solid 4px #4A9470;
+    border-radius: 4px;
+}
+
+.soc {
+    display: flex;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

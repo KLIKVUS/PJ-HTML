@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>О_o</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                overflow: hidden;
+                background: rgb(53, 53, 53);
+            }
+            
+            main div {
+                padding-top: 50px;
+                vertical-align: top;
+                font: small-caps 30px / 30px cursive;
+            }
+
+            .back {
+                height: 800px;
+                width: 1800px;
+                margin: 100px auto;
+                background-color: rgba(150, 150, 150, 0.2);
+            }
+
+            #MainButton {
+                margin: 0px 600px;
+                width: 600px;
+                height: 400px;
+                font: small-caps 60px / 30px cursive;
+                border-radius: 50px;
+                box-shadow: 0px;
+                border: 10px solid rgba(197, 21, 94, 0.7);
+            }
+
+            #MainText {
+                margin: 50px 760px;
+            }
+
+            #BONUS {
+                margin: -10px 30px;
+                display: inline;
+            }
+
+            #SHOP {
+                margin: -560px 20px;
+            }
+
+            #SCOREX2 {
+                margin: -500px 20px;
+                border-radius: 50px;
+                box-shadow: 0px;
+                border: 10px solid rgba(197, 21, 94, 0.7);
+            }
+        </style>
+    </head>
+    <body>
+        <!--{ Контент сайта }-->
+        <div>
+            <main class="back">
+                <div id="MainText">HElo my FRIEND !!</div>
+                <button id="MainButton">Tap to start!</button>
+                <div id="BONUS">U BONUS: </div>
+                <div id="SHOP">SHOP:</div>
+                <button id="SCOREX2">Buy SCOREX2</button>
+            </main>
+        </div>
+
+        <script>
+            // Переменные для счёта
+            var Clicke = 0
+            var Tic = 1
+
+            // Переменные магазина
+            // x2bonus = false
+
+            // Фон кнопки
+            MainButton.style.background = "rgba(148, 78, 148, 0.7)"
+
+            MainButton.onclick = function()  {
+                // Смена текста и обновление SCORA
+                MainButton.style.background = "rgba(148, 78, 148, 0.7)"
+                MainButton.innerText = "SCORE " + Clicke
+                Clicke += Tic
+
+                // Начисление бонусов
+                if (SCOREX2.onclick) {
+                    Tic = 2
+                    BONUS.innerText += " SCORE X2 "
+                }
+
+                // СМЭРТ !!
+                if (Clicke > 1000000) {
+                    Clicke = 0
+                    MainButton.innerText = "WTF, WHY U PLAY THIS TRASH??"
+                    MainButton.style.background = "red"
+                }
+            }
+        </script>
+    </body>
+</html>
