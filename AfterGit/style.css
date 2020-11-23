@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+}
+
+p {
+    margin: 30px auto;
+    width: 700px;
+    text-align: justify;
+    font: 20px sans-serif;
+}
+
+/* Псевдо элементы:
+    ::before ( перед тэгом )
+    ::after ( после тега ) */
+
+p::before { /* Селектор создает псевдо элемент с контентом перед всеми обзацвми */
+    content: "-";  /* Обезательно проптсывать! */
+    color: rgb(121, 121, 121);
+}
+
+p::after {
+    content: attr(title);
+    color: limegreen;
+}
+
+h1 {
+    width: 700px;
+    margin: 30px auto;
+    color: dimgray;
+    font: 50px fantasy;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1::before,
+h1::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    background: forestgreen;
+    display: block;
+}
+
+.daddy {
+    width: 700px;
+    height: 500px;
+    margin: 0 auto 30px;
+    background: aqua;
+    position: relative;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    position: static;   /* Есть у всех тегов в мире HTML */
+}
+
+.child1 {
+    background: rgb(208, 223, 218);
+    width: auto;
+    height: auto;
+    position: absolute;     /* Абсолютное позицианирование относительно границ близжайшего родителя, у которого position отличен от static. Если такого родителя нет - распологается относительно границ вюпорта ( экрана ). Без сохраниения своего статичного места. */
+    /* top || left || right || bottom */
+    top: 50px;
+    bottom: 50px;
+    left: 50px;
+    right: 50px;
+}
+
+.child2 {
+    background: rgb(177, 187, 187);
+    position: relative;     /* Относительно своего местоположения, с сохранение своего статичного места */
+    top: 250px;
+    left: 50px;
+    z-index: 1;      /* По умолчания все теги с position != static имеют z-index = 0 */
+}
+
+.child3 {
+    background:rgb(94, 105, 102);
+    position: fixed;    /* Всегда распологается относительно границ вюпорта ( экрана ) */
+    width: 700px;
+    height: 200px;
+    top: calc(50vh - 200px);
+    left: calc(50% - 350px);
+}
