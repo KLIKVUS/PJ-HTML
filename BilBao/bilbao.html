@@ -8,7 +8,7 @@
             width: 100vw;
             height: 100vh;
             overflow: hidden;
-            padding: 100px 200px;
+            padding: 50px 200px;
             box-sizing: border-box;
             margin: 0;
             display: flex;
@@ -16,8 +16,8 @@
         }
 
         h1 {
-            color: rgb(196, 162, 119);
-            font: 600 50px sans-serif;
+            color: rgb(165, 120, 100);
+            font: 600 65px sans-serif;
             text-transform: uppercase;
             position: relative;
             z-index: 1;
@@ -29,32 +29,53 @@
             height: 400px;
             width: 200px;
             background: rgb(233, 193, 141);
+            border: solid 1px;
+            border-radius: 0px 20px;
             position: absolute;
-            top: -140px;
-            left: -50px;
+            top: -100px;
+            left: -45px;
             z-index: -1;
         }
 
         .right {
-            width: 50%;
+            width: 30%;
+            margin: 30px 0;
+            font: 25px sans-serif;
+        }
+
+        .RightH2 {
+            font: 600 35px sans-serif;
+        }
+
+        .RightH3 {
+            font: 600 20px sans-serif;
+        }
+
+        img {
+            height: 700px;
+            width: 700px;
+            position: absolute;
+            top: 300px;
+            left: 500px;
         }
     </style>
 </head>
 <body>
     <h1>Phone <br> Mockup</h1>
+    <img src="iphone.png" alt="iphone">
     <div class="right">
-        <h2>App Design For Mobile</h2>
+        <h2 class="RightH2">App Design For Mobile</h2>
         <ul>
             <li>
-                <h3>Lorem, ipsum dolor.</h3>
+                <h3 class="RightH3">Lorem, ipsum dolor.</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est voluptates laboriosam quasi?</p>
             </li>
             <li>
-                <h3>Corrupti, soluta ut.</h3>
+                <h3 class="RightH3">Corrupti, soluta ut.</h3>
                 <p>Distinctio totam voluptatibus quibusdam ipsa nesciunt sint inventore optio commodi enim minima!</p>
             </li>
             <li>
-                <h3>Officiis, ipsum? Laboriosam?</h3>
+                <h3 class="RightH3">Officiis, ipsum? Laboriosam?</h3>
                 <p>Dignissimos deleniti maxime porro blanditiis eius ad, quisquam atque dolores iste sit?</p>
             </li>
         </ul>
