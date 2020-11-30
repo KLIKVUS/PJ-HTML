@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+
+header {
+    background: rgba(184, 74, 129, 0.7);
+}
+
+nav {
+    background:  rgba(184, 74, 129, 0.7);
+}
+
+main {
+    background: rgba(184, 74, 129, 0.7);
+}
+
+.site {
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 70px calc(100vh - 130px);
+    gap: 20px;
+}
+

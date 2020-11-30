@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 70px calc(100vh - 130px);
+    gap: 20px;
+}
+
+header, nav, main {
+    background:  rgb(90, 159, 160);
+    box-shadow: 3px 2px 2px 0 rgba(33, 55, 56, 0.7);
+    border-radius: 10px;
+}
+
+nav {
+    /* grid-row-end: span 2; */
+    grid-row: 1 / span 2;
+    grid-column-start: 1;
+}

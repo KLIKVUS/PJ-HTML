@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+}
+
+.container {
+    /* Создаем сетку */
+    display: grid;
+
+    /* Задаем столбцы внутри сетки. repeat( сколько и как будем повторять ( 1fr - один фрагмент ) ) */
+    grid-template-columns: repeat(3, 1fr);      /* grid-template-columns: 300px 50px 100px; */
+    /* Задаем размер строки внутри столбца */
+    grid-template-rows: 50px 800px;
+
+    /* Растояние между столбцами */
+    column-gap: 20px;
+
+    /* Растояние между строками */
+    row-gap: 50px;
+
+    /* Растояние между строками и Растояние между столбцами */
+    gap: 20px 50px;
+
+    background: rgb(180, 114, 83);
+    padding: 50px;
+}
+
+.item {
+    min-height: 25px;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+.item1 {
+    width: 100px;
+    background: rgb(197, 26, 26);
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+
+.item2 {
+    background: cadetblue;
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+
+.item7 {
+    background: rgb(47, 47, 172);
+
+    /* У какой линии начнется элемент внутри сетки ( ось x ) */
+    grid-column-start: 2;
+    /* У какой линии закончиться элемент внутри сетки ( ось x ) */
+    grid-column-end: 3;
+
+    /* У какой линии начнется элемент внутри сетки ( ось y ) */
+    grid-row-start: 3;
+    /* У какой линии закончиться элемент внутри сетки ( ось y ) */
+    grid-row-end: span 5;       /* Сколько строк займет элемент в сетке ( ось y ) */
+}
