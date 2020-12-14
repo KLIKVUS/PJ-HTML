@@ -23,9 +23,9 @@ header {
 }
 
 nav {
-    height: 50vh;
+    height: 25vh;
     width: 15vh;
-    margin: 10px 10px auto;
+    margin: 10px 15px;
     padding: 10px;
     background: #7372722f;
     position: fixed;
@@ -34,11 +34,12 @@ nav {
 
 main {
     width: 135vh;
-    height: 160vh;
+    height: 10vh;
     margin: 10px auto;
     font-size: 18px;
     color: rgb(145, 130, 109);
     background: rgba(188, 143, 143, 0.1);
+    position: absolute;
 }
 
 a {
@@ -58,19 +59,7 @@ ul {
     border-radius: 20px;
 }
 
-.menu {
-    display: flex;
-    flex-direction: column;
-}
-
 .commands p {
     display: flex;
     flex-direction: column;
 }
-
-/* #neon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 99;
-} */
