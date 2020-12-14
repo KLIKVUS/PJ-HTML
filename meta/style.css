@@ -1,0 +1,79 @@
+body {
+    margin: 0;
+    background: rgb(175, 44, 21);
+    filter: grayscale(25%);
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.baner {
+    height: 500px;
+
+    background-image: url(https://wallpapercave.com/wp/wp2757847.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.cards {
+    margin: 0;
+    padding: 40px 0 10px;
+
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    width: 270px;
+    height: 270px;
+
+    background: rgb(170, 13, 13);
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 2px rgba(0, 0, 0, 0.2);
+
+    font: 700 100px sans-serif;
+    line-height: 300px;
+    text-align: center;
+    color: rgb(235, 235, 235);
+
+    margin-bottom: 30px;
+}
+
+/* Изменяет тег при выборе опред устройства
+    print handheld tv braile screen */
+@media print {
+    body {
+        background: white;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    .baner {
+        filter: grayscale(50%);
+    }
+    .item {
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        box-shadow: none;
+        background: white;
+        color: black;
+        border: solid 2px black;
+    }
+}
+
+@media ( min-width: 500px ) and ( max-width: 700px ) {
+    body {
+        background: rgb(172, 56, 56);
+    }
+    .wrapper {
+        padding: 0 20px;
+        width: auto;
+    }
+}
