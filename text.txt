@@ -1,0 +1,2 @@
+https://cubic-bezier.com/#.51,-0.52,.47,1.47
+https://git-scm.com/book/ru/v2
