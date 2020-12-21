@@ -318,7 +318,7 @@ footer {
 
 
 /* Для мобилки */
-@media ( min-width: 800px ) and ( max-width: 1200px ) {
+@media ( min-width: 800px ) and ( max-width: 1500px ) {
     .navigation {
         left: calc(25% / 4);
         right: calc(25% / 4);
@@ -349,7 +349,7 @@ footer {
         margin: 0 0 50px 0;
         font-size: 18px;
     }
-    .game-box {
+    .boxed {
         display: none;
     }
     .navigation {
@@ -395,7 +395,7 @@ footer {
     .card a {
         font-size: 18px;
     }
-    .game-box {
+    .boxed {
         display: none;
     }
     .navigation {
