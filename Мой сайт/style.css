@@ -82,7 +82,7 @@ body {
     content: ' ';
 
     background: url("images/baner.gif") no-repeat center / cover fixed;
-    filter: blur(2px) brightness(5%) opacity(1);
+    filter: blur(2px) brightness(10%) opacity(1);
 
     position: absolute;
     top: 0; bottom: 0; left: 0; right: 0;
@@ -318,7 +318,7 @@ footer {
 
 
 /* Для мобилки */
-@media ( min-width: 800px ) and ( max-width: 1200px ) {
+@media ( min-width: 800px ) and ( max-width: 1500px ) {
     .navigation {
         left: calc(25% / 4);
         right: calc(25% / 4);
@@ -349,7 +349,7 @@ footer {
         margin: 0 0 50px 0;
         font-size: 18px;
     }
-    .game-box {
+    .boxed {
         display: none;
     }
     .navigation {
@@ -395,7 +395,7 @@ footer {
     .card a {
         font-size: 18px;
     }
-    .game-box {
+    .boxed {
         display: none;
     }
     .navigation {
