@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        textarea {
+            resize: horizontal;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header">
+        <img src="https://www.creativegaga.com/wp-content/uploads/2017/08/Fanta-5.jpg" alt="Logo" style="width: 900px;">
+
+        <nav>
+            <ul class="main-menu">
+                <li><a href="">Главная</a></li>
+                <li><a href="">О нас</a></li>
+                <li><a href="">Контакты</a></li>
+                <li><a href="">Конкетки</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+
+    <main>
+        <div class="main-img">
+            <img src="img/Fanta-Png-Image.png" alt="Bottle" style="width: 200px;">
+        </div>
+
+        <div class="main-text">
+            <h1>Dada</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Название</th>
+                        <th>Информация</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Тип</td>
+                        <td>Безалкогольный напиток</td>
+                    </tr>
+                    <tr>
+                        <td>Производитель</td>
+                        <td>The Coca-Cola Company</td>
+                    </tr>
+                    <tr>
+                        <td>Происхождение</td>
+                        <td>Германия</td>
+                    </tr>
+                    <tr>
+                        <td>Год</td>
+                        <td>1940</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th colspan="2">Сайт - fanta.ru</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <!-- Главное видео -->
+        <video height="500px" controls>
+            <source src="file.ogg" type="video/ogg">
+            <source src="https://kino-teatr.ua/public/main/films/trailer_19456.mp4">
+            <track src="file_ru.vtt" srclang="ru">
+            <track src="file_en.vtt" srclang="en">
+        </video>
+
+        <!-- Описание, рецензии и трейлеры -->
+        <nav class="targets">
+            <a href="about.html" target="info">Описание</a>
+            <a href="video.html" target="info">Другие трейлеры</a>
+            <a href="reviews.html" target="info">Рецензии</a>
+        </nav>
+        
+        <iframe src="about.html" height="300px" width="99%" name="info"></iframe>
+    </main>
+
+    <figure>
+        <picture>
+            <source src="img/2.jpg" media="(max-width: 500px)">
+            <img src="img/1.svg" media="(max-width: 1000px)">
+        </picture>
+        <figcaption>Тут какбы да</figcaption>
+    </figure>
+
+    <section>
+        <h2>Отзывы</h2>
+        <article>
+            <header class="rewH">★★☆☆☆</header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quod ipsa, fuga beatae at sunt id enim praesentium quae voluptate ratione tempora velit vero et cumque corrupti, optio rerum dolorum?</p>
+            <footer class="revF">06.03.21</footer>
+        </article>
+        <article>
+            <header class="rewH">★★★★☆</header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quod ipsa, fuga beatae at sunt id enim praesentium quae voluptate ratione tempora velit vero et cumque corrupti, optio rerum dolorum?</p>
+            <footer class="revF">21.02.21</footer>
+        </article>
+        <article>
+            <header class="rewH">★☆☆☆☆</header>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, quod ipsa, fuga beatae at sunt id enim praesentium quae voluptate ratione tempora velit vero et cumque corrupti, optio rerum dolorum?</p>
+            <footer class="revF">14.01.21</footer>
+        </article>
+
+        <form action="path/file.php" method="POST">
+            <fieldset>
+                <legend>Оставить отзыв</legend>
+                <label for="inp1">Введите имя</label>
+                <input type="text" id="inp1" name="user"> <br>
+
+                <label for="inp2">Выберите рейтинг</label>
+                <input type="text" list="inp3" id="inp2" name="rating">
+
+                <datalist id="inp3">
+                    <option value="5">Отлично</option>
+                    <option value="4">Хорошо</option>
+                    <option value="3">Ну такое...</option>
+                    <option value="2">Фигня</option>
+                    <option value="1">Bull Shit</option>
+                </datalist> <br>
+
+                <textarea cols="40" rows="10" placeholder="Тут будет шото.."></textarea>
+            </fieldset>
+            <button type="submit">Отправить отзыв</button>
+        </form>
+    </section>
+
+    <footer id="main-footer">&copy;IThub 2021</footer>
+</body>
+</html>
